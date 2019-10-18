@@ -12,10 +12,7 @@ import com.android.anupkumar.instagram.di.module.ActivityModule
 import com.android.anupkumar.instagram.utils.display.Toaster
 import javax.inject.Inject
 
-/**
- * Reference for generics: https://kotlinlang.org/docs/reference/generics.html
- * Basically BaseActivity will take any class that extends BaseViewModel
- */
+
 abstract class BaseActivity<VM : BaseViewModel> : AppCompatActivity() {
 
     @Inject
